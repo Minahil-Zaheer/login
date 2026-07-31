@@ -6,7 +6,7 @@ require_once "config.php";
 
 if(!isset($_SESSION['userId']))
 {
-    header("Location:login.php");
+   echo "<script>window.location.href = 'login.php'</script>";
 }
 
 $id = $_SESSION['userId'];

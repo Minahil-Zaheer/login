@@ -1,72 +1,72 @@
 <?php
 require_once "config.php";
 
-if(isset($_POST['register']))
-{
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $gender = $_POST['gender'];
-    $city = $_POST['city'];
+// if(isset($_POST['register']))
+// {
+//     $username = $_POST['username'];
+//     $email = $_POST['email'];
+//     $password = $_POST['password'];
+//     $gender = $_POST['gender'];
+//     $city = $_POST['city'];
 
-    mysqli_query($conn,"INSERT INTO users(username,email,password,gender,city)
-    VALUES('$username','$email','$password','$gender','$city')");
+//     mysqli_query($conn,"INSERT INTO users(username,email,password,gender,city)
+//     VALUES('$username','$email','$password','$gender','$city')");
 
-    echo "Registration Successful";
-}
-?>
+//     echo "Registration Successful";
+// }
+// ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Register</title>
-</head>
-<body>
+<!-- // <!DOCTYPE html>
+// <html>
+// <head>
+//     <title>Register</title>
+// </head>
+// <body>
 
-<h2>Registration Form</h2>
+// <h2>Registration Form</h2>
 
-<form method="post">
+// <form method="post">
 
-Username:
-<input type="text" name="username"><br><br>
+// Username:
+// <input type="text" name="username"><br><br>
 
-Email:
-<input type="email" name="email"><br><br>
+// Email:
+// <input type="email" name="email"><br><br>
 
-Password:
-<input type="password" name="password"><br><br>
+// Password:
+// <input type="password" name="password"><br><br>
 
-Gender:
+// Gender:
 
-<input type="radio" name="gender" value="Male">Male
+// <input type="radio" name="gender" value="Male">Male
 
-<input type="radio" name="gender" value="Female">Female
+// <input type="radio" name="gender" value="Female">Female
 
-<br><br>
+// <br><br>
 
-City:
+// City:
 
-<select name="city">
+// <select name="city">
 
-<option>Karachi</option>
+// <option>Karachi</option>
 
-<option>Lahore</option>
+// <option>Lahore</option>
 
-<option>Islamabad</option>
+// <option>Islamabad</option>
 
-<option>Punjab</option>
+// <option>Punjab</option>
 
-</select>
+// </select>
 
-<br><br>
+// <br><br>
 
-<input type="submit" name="register" value="Register">
+// <input type="submit" name="register" value="Register">
 
-</form>
+// </form>
 
-<br>
+// <br>
 
-<a href="login.php">Login Here</a>
+// <a href="login.php">Login Here</a>
 
-</body>
-</html>
+// </body>
+// </html> -->
